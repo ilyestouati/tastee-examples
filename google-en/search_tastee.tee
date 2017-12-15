@@ -1,5 +1,0 @@
-//savor search_tastee.yaml
-go to 'https://www.google.fr'
-fill 'lst-ib' field with 'https://tastee.github.io/'
-click on '#tsf > div.tsf-p > div.jsb > center > input[type="submit"]:nth-child(1)'
-check that '//*[@id="rso"]/div/div/div[1]/div/div/h3/a' is equal to 'Tastee — test framework : test made Natural'
