@@ -5,7 +5,7 @@ click on $name:
     - driver.findElement(By.css($name)).click();
 
 check that $name is equal to $value:
-    - var element = driver.findElement(By.xpath($name));
+    - var element = driver.findElement(By.css($name));
     - element.getText().then(function(text) {
         assert.equal(text, $value, 'the '+ $name + ' element contains '+text);
       });
