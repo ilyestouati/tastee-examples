@@ -11,7 +11,15 @@ Vérifier que $name est identique à $value:
       });
 
 Renseigner $field avec $value:
-    - driver.findElement(By.id($field)).sendKeys($value);
+    - driver.findElement(By.css($field)).sendKeys($value);
 
 Vider le champs $field:
-    - driver.findElement(By.css($field)).clear();                  
+    - driver.findElement(By.css($field)).clear();     
+
+# documentation sur les keys : https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_Key.html
+Appuyer sur Entrée:
+    - driver.keyDown(Keys.ENTER);
+
+Appuyer sur $key:
+    - driver.keyDown(Keys.$key);
+    

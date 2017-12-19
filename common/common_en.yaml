@@ -11,4 +11,4 @@ check that $name is equal to $value:
       });
 
 fill $field field with $value:
-    - driver.findElement(By.id($field)).sendKeys($value);
+    - driver.findElement(By.css($field)).sendKeys($value);
