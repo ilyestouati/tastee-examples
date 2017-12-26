@@ -1,14 +1,24 @@
-go to $url:
+Go to $url:
     - driver.get($url);
 
-click on $name:
+Click on $name:
     - driver.findElement(By.css($name)).click();
 
-check that $name is equal to $value:
+Check that $name is equal to $value:
     - var element = driver.findElement(By.css($name));
     - element.getText().then(function(text) {
         assert.equal(text, $value, 'the '+ $name + ' element contains '+text);
       });
 
-fill $field field with $value:
+Check that $name is not present:
+    - driver.findElements(By.css($name)).then(found => assert.equal(!!found.length, false));
+
+Fill $field field with $value:
     - driver.findElement(By.css($field)).sendKeys($value);
+
+Empty field $field:
+    - driver.findElement(By.css($field)).clear();     
+
+# documentation on keys : https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_Key.html
+Press on $key in the field $field:
+    - driver.findElement(By.css($field)).sendKeys(Key.$key);

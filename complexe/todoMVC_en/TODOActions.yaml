@@ -1,0 +1,9 @@
+Add task $task:
+    - Fill '.new-todo' field with $task
+    - Press on ENTER in the field '.new-todo'
+
+Complete the first 3 tasks:
+    - Click on  '.todo-list li:nth-child(1) .toggle'
+    - Click on '.todo-list li:nth-child(2) .toggle'
+    - Click on '.todo-list li:nth-child(3) .toggle'
+    - Click on '.clear-completed'

@@ -1,0 +1,9 @@
+Ajouter une action $action:
+    - Renseigner '.new-todo' avec $action
+    - Appuyer sur ENTER dans le champs '.new-todo'
+
+Completer les 3 première taches:
+    - Cliquer sur '.todo-list li:nth-child(1) .toggle'
+    - Cliquer sur '.todo-list li:nth-child(2) .toggle'
+    - Cliquer sur '.todo-list li:nth-child(3) .toggle'
+    - Cliquer sur '.clear-completed'
