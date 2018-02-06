@@ -1,0 +1,12 @@
+Aller sur qwant.fr:
+    - Allez sur le site qwant.url
+
+Rechercher les termes $termes:
+    - Renseigner champs.de.recherche avec $termes
+    - Cliquer sur bouton.rechercher
+
+Vérifier que le premier résultat est le repo de Tastee:
+    - Vérifier que premier.resultat est identique à 'tastee · GitHub'
+
+
+
